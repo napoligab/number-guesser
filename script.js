@@ -14,3 +14,11 @@ function compareGuesses(human, computer, secret) {
     return false;
   }
 }
+
+function updateScore(winner) {
+  if (winner === 'human') {
+    humanScore++;
+  } else if (winner === 'computer') {
+    computerScore++;
+  }
+}

@@ -7,4 +7,10 @@ const generateTarget = () => {
   return randomNum;
 };
 
-console.log(generateTarget());
+function compareGuesses(human, computer, secret) {
+  if (Math.abs(human - secret) <= Math.abs(computer - secret)) {
+    return true;
+  } else {
+    return false;
+  }
+}
